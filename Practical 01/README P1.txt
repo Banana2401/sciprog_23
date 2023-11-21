@@ -1,1 +1,0 @@
-This is a README file for practical 01. We will be using the printf to print the result
