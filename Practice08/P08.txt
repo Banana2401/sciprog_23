@@ -1,0 +1,9 @@
+ssh sp68@sciprog.ichec.ie
+cd Practice
+cd P08
+
+gcc -o P08 P08.c
+./P08
+[output]
+Using iteration, we get the answer: 7
+Using recursion, we get the answer: 7
