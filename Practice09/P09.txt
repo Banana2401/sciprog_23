@@ -1,0 +1,53 @@
+ssh sp68@sciprog.ichec.ie
+cd Practice
+cd P09
+
+gcc -std=c99 P09_01.c -o P09_01
+ls
+magic_square_stub.fh  magic.txt  not_magic.txt  P08_02.h  P09_01  P09_01.c
+./P09_01
+
+[output]
+Enter file name: magic.txt
+Number of lines: 3
+2       7       6
+9       5       1
+4       3       8
+M=15
+i=0, rowSum=15, colSum=15
+i=1, rowSum=15, colSum=15
+i=2, rowSum=15, colSum=15
+ diagSum=15, secDiagSum=15
+This square is magic
+
+
+./P09_01
+[output]
+Enter file name: not_magic.txt
+Number of lines: 3
+1       2       3
+4       5       6
+7       8       9
+M=15
+i=0, rowSum=6, colSum=12
+This square is NOT magic
+
+
+
+Macro Definitions:
+“int getlines(char filename[MAX_FILE_NAME])”: A function that opens a file, counts the number of lines, prints the count, and returns the count.
+Main Function:
+Prompts the user to enter a file name.
+Calls the getlines function to get the number of lines in the file.
+Allocates memory for a 2D array (magicSquare) based on the number of lines.
+Reads the integers from the file into the magicSquare matrix.
+Prints the matrix.
+Calls the isMagicSquare function to check if it's a magic square and prints the result.
+Frees the allocated memory.
+Closes the file.
+
+getlines Function:
+Opens the file specified by the provided filename.
+Counts the number of newline characters to determine the number of lines.
+Prints the count.
+Closes the file and returns the count
