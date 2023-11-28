@@ -1,0 +1,54 @@
+ssh sp68@sciprog.ichec.ie
+cd Practice
+cd P05
+
+gcc -o P05_scanf P05_scanf.c
+./P05_scanf
+[output]
+Enter an int and double:
+99 7
+You entered: 99 and 7.000000
+
+gcc -o P05_fibo P05_fibo.c -lm
+./P05_fibo
+[output]
+Enter a positive integer: 7
+The Fibonacci sequence is:
+0, 1, 1, 2, 3, 5, 8, 13, 
+
+./P05_fibo
+[output]
+Enter a positive integer: 30
+The Fibonacci sequence is:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181,
+6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229,
+832040, 
+
+gcc -o P05_03 P05_03.c -lm
+./P05_03
+[putput]
+Enter the precision for the Maclaurin series:
+4
+The difference at x=-0.900000 between them is 0.5722194896.
+The difference at x=-0.800000 between them is 0.2986122887.
+The difference at x=-0.700000 between them is 0.1673005277.
+The difference at x=-0.600000 between them is 0.0931471806.
+The difference at x=-0.500000 between them is 0.0493061443.
+The difference at x=-0.400000 between them is 0.0236489302.
+The difference at x=-0.300000 between them is 0.0095196042.
+The difference at x=-0.200000 between them is 0.0027325541.
+The difference at x=-0.100000 between them is 0.0003353477.
+The difference at x=-0.000000 between them is 0.0000000000.
+The difference at x=0.100000 between them is 0.0003353477.
+The difference at x=0.200000 between them is 0.0027325541.
+The difference at x=0.300000 between them is 0.0095196042.
+The difference at x=0.400000 between them is 0.0236489302.
+The difference at x=0.500000 between them is 0.0493061443.
+The difference at x=0.600000 between them is 0.0931471806.
+The difference at x=0.700000 between them is 0.1673005277.
+The difference at x=0.800000 between them is 0.2986122887.
+The difference at x=0.900000 between them is 0.5722194896.
+
+The program calculates and compares the results of arctan approximation using Maclaurin series (arctanh1) and the logarithmic formula (arctanh2) for different values of x.
+The user is prompted to enter the precision (delta) for the Maclaurin series.
